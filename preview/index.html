@@ -1,0 +1,35 @@
+
+<html>
+  <head>
+    <base href="./">
+  </head>
+  <body onload="MyFunction()">
+    
+    <app-bcard  
+    title="SARA VARGHESE"
+    text="Software Trainee in Quest Global."
+    button_name="Details"
+    image_path ="https://www.w3schools.com/bootstrap4/img_avatar5.png"
+    fname="Sara Varghese"
+    occupation="Software Trainee in Quest Global"
+    location="Ernakulam"
+    display =" fun($event)"></app-bcard>
+    
+    <script>
+      function MyFunction(){
+       // console.log("data" +data);
+        
+      
+      const component = document.querySelector('app-bcard');
+      component.addEventListener('display', (event) => {
+        alert(event.detail);
+      })
+    }
+      </script>
+    
+
+  
+    
+    <script src="./card.js"></script>
+  </body>
+</html>
